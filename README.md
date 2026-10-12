@@ -38,3 +38,11 @@ python3 -m evallint fixtures/bad.jsonl   # exits 1
 ```bash
 python3 -m unittest -v
 ```
+
+## Notes
+
+- Normalisation for duplicate detection is lower-casing plus whitespace collapse; it will not
+  catch paraphrases, only copy-paste repeats.
+- Thresholds (`MIN_CASES`, `MAX_LABEL_SHARE`) live in `evallint/lint.py`. The imbalance check
+  assumes categorical answers and is only meaningful when `expected` repeats.
+- Output on `fixtures/bad.jsonl` is checked in `tests/test_lint.py`, not quoted here.
