@@ -1,0 +1,5 @@
+{"id": "a", "input": "What is 2+2?", "expected": "4"}
+{"id": "a", "input": "Capital of France?", "expected": "Paris"}
+{"id": "b", "input": "what is  2+2?", "expected": "five"}
+{"id": "c", "input": "   ", "expected": "x"}
+not json
